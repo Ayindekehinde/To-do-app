@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="to-do.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo-app">
+                <h1>TO-DO APP</h1>
+                <div class="stat-container">
+                    <div class="details">
+                        <h3>Keep it up!</h3>
+                        <div id="progressbar">
+                            <div id="progress"></div>
+                        </div>
+                    </div>
+                    <div class="stats-number">
+                        <p id="numbers">0 / 0</p>
+                    </div>
+                </div>
+                <form class="input-area" id="todo-form">
+                    <input type="text" id="task-input" placeholder="Add New Task">
+                    <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+                </form>
+                <div class="todos-container">
+                    <ul id="task-list">
+                    </ul>
+                    <img class="empty-Image"  src="todo.png" width="150px" height="150px" alt="empty">
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+        <script src="to-do.js"></script>
+    </body>
+</html>
